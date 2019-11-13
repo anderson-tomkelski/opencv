@@ -1,7 +1,7 @@
 import cv2, random
 import numpy as np
 
-img = cv2.imread('../louvre.jpeg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('./bw.png', cv2.IMREAD_GRAYSCALE)
 
 im2, contours, hierarchy = cv2.findContours(img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
